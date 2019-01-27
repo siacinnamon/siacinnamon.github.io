@@ -1,0 +1,132 @@
+@media (min-width: 1025px) {
+    .screen-1_item-1  {
+        background-color: transparent;
+    }
+}
+
+
+@media (min-width: 1201px) {
+    /*цей весь код був спочатку в основному файлі. але я перенесла його сюди в медіа-тег для респонсивності.*/
+    /*від простішого (в основному коді), до складнішого (в медіа-тезі)*/
+    .screen-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        min-height: 60vh;
+    }
+
+    .screen-3_item-1 {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        align-self: center;
+        text-align: center;
+    }
+
+    .screen-3_item-2 {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .screen-3_item-3 {
+        grid-column: 2 / span 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .screen-3_item-4 {
+        grid-column: 3 / span 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .screen-3_item-5 {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+
+    }
+}
+
+@media (min-width: 993px) {
+    .screen-4 {
+        min-height: 50vh;
+    }
+
+    .footer {
+        /*min-width: 100%;*/
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-items: center;
+        align-items: center;
+        background-color: #262626;
+    }
+
+    .footer-item-1 {
+        text-align: center;
+        color: #bfbfbf;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .footer-item-2 {
+        padding: 10px 0 5px 0;
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+    .screen-2 {
+        display: grid;
+        height: 50vh;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .screen-2_item-1 {
+        grid-column: 1 / span 1;
+    }
+
+    .screen-2_item-2 {
+        grid-column: 2 / span 1;
+    }
+
+    .screen-2_item-3 {
+        grid-column: 3 / span 1;
+    }
+
+    .screen-2_item-4 {
+        grid-column: 4 / span 1;
+    }
+
+}
+
+@media (max-width: 993px) {
+    .screen-4 button img {
+        display: none;
+    }
+
+    .screen-4 a {
+        font-size: 10vw;
+        color: #ffffff;
+        margin: auto;
+    }
+
+    .screen-4 button {
+        border-radius: 100px;
+        border-color: transparent;
+        width: 70%;
+        padding: 20px;
+    }
+
+
+}
+
+@media (max-width: 330px)  {
+    .screen-1_item-2 h1 {
+        font-size: 800%;
+    }
+}
+
