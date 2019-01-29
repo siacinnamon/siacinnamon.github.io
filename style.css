@@ -72,7 +72,11 @@ button.navbar-toggler:focus {
     grid-row: 2 / span 2;
     text-align: center;
     align-self: center;
-    background: url(img/backgrounds/1-blurred.jpg) no-repeat fixed center / cover;
+    background: url(img/backgrounds/1-blurred.jpg) no-repeat fixed center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+    background-size: cover;
 
 }
 
