@@ -23,8 +23,7 @@ section.screen-1 {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    background: url(img/backgrounds/1.jpg) no-repeat center / cover;
-    background-attachment: fixed;
+    background: url(img/backgrounds/1.png) no-repeat fixed center / cover;
 }
 
 .screen-1_item-1  {
@@ -73,9 +72,10 @@ button.navbar-toggler:focus {
     grid-row: 2 / span 2;
     text-align: center;
     align-self: center;
-    background: url(img/backgrounds/1-blurred.jpg) no-repeat center / cover;
-    background-attachment: fixed;
+    background: url(img/backgrounds/1-blurred.jpg) no-repeat fixed center / cover;
+
 }
+
 
 .screen-1_item-2 h1 {
     box-sizing: border-box;
