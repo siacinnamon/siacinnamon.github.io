@@ -71,6 +71,18 @@
         grid-row: 1 / span 1;
     }
 
+    section.screen-1 {
+        background: url(img/backgrounds/1.jpg) no-repeat fixed center / cover;
+    }
+
+    .screen-1_item-2 {
+        background: url(img/backgrounds/1-blurred.jpg) no-repeat fixed center / cover;
+    }
+
+    section.background {
+        background: url(img/backgrounds/1.jpg) no-repeat fixed center / cover;
+    }
+
 
 }
 
@@ -103,6 +115,17 @@
         min-height: 40vh;
     }
 
+    .screen-4 button {
+        border-radius: 100px;
+        border-color: transparent;
+        padding: 20px 50px;
+    }
+
+    .screen-4 a {
+        font-size: 300%;
+    }
+
+
 }
 
 @media (max-width: 993px) {
@@ -111,7 +134,7 @@
     }
 }
 
-@media (max-width: 330px)  {
+@media (max-width: 330px) {
     .screen-1_item-2 h1 {
         font-size: 800%;
     }
