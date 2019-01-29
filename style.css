@@ -38,19 +38,19 @@ section.screen-1 {
 }
 
 .navbar-toggler-icon {
-    width: 3em !important;;
-    height: 3em !important;;
+    width: 2em !important;;
+    height: 2em !important;;
 }
 
 a.navbar-brand {
     color: #ffffff;
-    font-size: 400%;
+    font-size: 250%;
 
 }
 
 .nav-link {
     color: #ffffff;
-    font-size: 300%;
+    font-size: 200%;
     font-weight: normal;
 }
 
@@ -79,14 +79,14 @@ button.navbar-toggler:focus {
 
 .screen-1_item-2 h1 {
     box-sizing: border-box;
-    font-size: 1000%;
+    font-size: 800%;
     color: #ffffff;
 }
 
 .screen-1_item-2 p {
     color: #ffffff;
-    font-size: 270%;
-    letter-spacing: 5px;
+    font-size: 200%;
+    letter-spacing: 10px;
 }
 
 /*кінець першого екрану*/
@@ -129,7 +129,7 @@ section.screen-2 p {
     display: inline-block;
     padding: 5px;
     text-align: center;
-    font-size: 300%;
+    font-size: 200%;
     transition: border-bottom 2s;
 }
 
@@ -152,7 +152,8 @@ section.background {
 
 .screen-3_item-1 {
     justify-self: center;
-    font-size: 500%;
+    font-size: 300%;
+    padding: 20px 0;
 }
 
 ul {
@@ -163,7 +164,7 @@ li {
     list-style: none;
     background: url(img/icons/turkey.jpg) no-repeat 0.4px;
     padding-left: 40px !important;
-    font-size: 250%;
+    font-size: 180%;
 }
 
 li:hover {
@@ -194,7 +195,7 @@ li:hover {
 }
 
 .screen-4 a {
-    font-size: 500%;
+    font-size: 300%;
     color: #ffffff;
 }
 
@@ -204,10 +205,15 @@ li:hover {
     text-shadow: 1px 1px 5px lightgrey;
 }
 
+.screen-4 img {
+    width: 70px;
+    height: auto;
+}
+
 .screen-4 button {
     border-radius: 100px;
     border-color: transparent;
-    padding: 50px 150px;
+    padding: 20px 100px;
     transition: background 1s;
     -webkit-box-shadow: 0 10px 31px 10px rgba(0,0,0,0.35);
     -moz-box-shadow: 0 10px 31px 10px rgba(0,0,0,0.35);
@@ -244,22 +250,19 @@ li:hover {
 
 .footer-item-1 h1 {
     color: #dddddd;
-    font-size: 350%;
+    font-size: 200%;
 }
 
 
 .footer-item-1 p {
     color: #dddddd;
-    font-size: 250%;
+    font-size: 130%;
 
 }
 
 .footer-item-2 {
     grid-row: 2;
-    width: 100%;
-    position: relative;
-    padding: 0;
-    height: 100%;
+    align-self: end;
 }
 
 
@@ -273,8 +276,8 @@ a.fb-icon {
     background-size: contain;
     box-sizing: border-box;
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     margin: auto;
 }
 
@@ -283,27 +286,16 @@ a.inst-icon {
     background-size: contain;
     box-sizing: border-box;
     display: inline-block;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     margin: auto;
 }
 
 img.logo {
-    width: 250px;
+    width: 170px;
     height: auto;
     align-self: center;
-    padding: 10px;
 }
-
-
-iframe {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
-
-
 
 
 

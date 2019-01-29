@@ -5,7 +5,7 @@
 }
 
 
-@media (min-width: 1201px) {
+@media (min-width: 1024px) {
     /*цей весь код був спочатку в основному файлі. але я перенесла його сюди в медіа-тег для респонсивності.*/
     /*від простішого (в основному коді), до складнішого (в медіа-тезі)*/
     .screen-3 {
@@ -13,7 +13,9 @@
         grid-template-columns: repeat(3, 1fr);
         min-height: 60vh;
     }
-
+    ul {
+        padding-left: 40px;
+    }
     .screen-3_item-1 {
         grid-column: 1 / span 3;
         grid-row: 1;
@@ -47,9 +49,6 @@
 }
 
 @media (min-width: 993px) {
-    .screen-4 {
-        min-height: 50vh;
-    }
 
     .footer {
         /*min-width: 100%;*/
@@ -68,7 +67,6 @@
     }
 
     .footer-item-2 {
-        padding: 10px 0 5px 0;
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
     }
@@ -76,7 +74,7 @@
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .screen-2 {
         display: grid;
         height: 50vh;
@@ -101,27 +99,16 @@
         grid-column: 4 / span 1;
     }
 
+    .screen-4 {
+        min-height: 40vh;
+    }
+
 }
 
 @media (max-width: 993px) {
     .screen-4 button img {
         display: none;
     }
-
-    .screen-4 a {
-        font-size: 10vw;
-        color: #ffffff;
-        margin: auto;
-    }
-
-    .screen-4 button {
-        border-radius: 100px;
-        border-color: transparent;
-        width: 70%;
-        padding: 20px;
-    }
-
-
 }
 
 @media (max-width: 330px)  {
