@@ -220,7 +220,7 @@ li:hover {
 /*четвертий екран*/
 .screen-4 {
     min-height: 250px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
     display: grid;
     align-content: center;
 }
