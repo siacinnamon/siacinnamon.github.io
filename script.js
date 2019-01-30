@@ -72,4 +72,14 @@ $(document).ready(function () {
 });
 
 
+var controller = new ScrollMagic.Controller();
+var slideParallaxScene = new ScrollMagic.Scene({
+    triggerElement: '.bgc-parallax',
+    triggerHook: 1,
+    duration: '100%'
+})
+    .setTween(TweenMax.from('.bgc', 1, {y: '-40%', ease: Power0.easeNone}))
+    .addTo(controller);
+
+
 

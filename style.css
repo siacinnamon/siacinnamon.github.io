@@ -131,11 +131,45 @@ section.screen-2 p {
     transition: border-bottom 2s;
 }
 
-section.background {
+.bgc-parallax {
+    padding: 150px 0;
+    color: #fff;
+    background-color: #000000;
+    -ms-text-align-last: right;
+    text-align: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.bgc {
+    background: url(img/backgrounds/1.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
     width: 100%;
-    height: 30vh;
-    box-sizing: border-box;
-    background: url(img/backgrounds/1.jpg) no-repeat scroll center / cover;
+    height: 200%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.6;
+}
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    z-index: 2;
+}
+
+.content-wrapper h1 {
+    font-size: 400%;
+}
+
+.content-wrapper p {
+    font-size: 180%;
+}
+
+.content-wrapper h2 {
+    font-size: 300%;
 }
 
 /*кінець другого екрану*/
