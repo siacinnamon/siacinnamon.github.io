@@ -5,6 +5,7 @@ $(function () {
     });
 });
 
+// -----
 
 $(document).ready(function () {
     $(".wrapper").slick({
@@ -34,6 +35,7 @@ $(document).ready(function () {
 
 });
 
+// -----
 
 $(document).ready(function(){
     // Add scrollspy to <body>
@@ -62,6 +64,7 @@ $(document).ready(function(){
     });
 });
 
+// -----
 
 $(document).ready(function () {
     $("#navbarNavDropdown a").click(function (event){
@@ -72,8 +75,8 @@ $(document).ready(function () {
 });
 
 
-var controller = new ScrollMagic.Controller();
-var slideParallaxScene = new ScrollMagic.Scene({
+let controller = new ScrollMagic.Controller();
+let slideParallaxScene = new ScrollMagic.Scene({
     triggerElement: '.bgc-parallax',
     triggerHook: 1,
     duration: '100%'

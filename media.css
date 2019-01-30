@@ -6,8 +6,6 @@
 
 
 @media (min-width: 1024px) {
-    /*цей весь код був спочатку в основному файлі. але я перенесла його сюди в медіа-тег для респонсивності.*/
-    /*від простішого (в основному коді), до складнішого (в медіа-тезі)*/
     .screen-3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -65,18 +63,12 @@
     }
 
     section.screen-1 {
-        background: url(img/backgrounds/1.jpg) no-repeat fixed center / cover;
+        background: url(img/backgrounds-and-turkey-meat-photos/bg.png) no-repeat fixed center / cover;
     }
 
     .screen-1_item-2 {
-        background: url(img/backgrounds/1-blurred.jpg) no-repeat fixed center / cover;
+        background: url(img/backgrounds-and-turkey-meat-photos/bg-blurred-min.png) no-repeat fixed center / cover;
     }
-
-    section.background {
-        background: url(img/backgrounds/1.jpg) no-repeat fixed center / cover;
-    }
-
-
 }
 
 @media (min-width: 768px) {
@@ -130,25 +122,14 @@
 @media (max-width: 600px) {
 
     .bgc-parallax {
-        padding: 150px 0;
-        color: #fff;
-        background-color: #000000;
         -ms-text-align-last: center;
         text-align: center;
-        position: relative;
-        overflow: hidden;
     }
 
     .bgc {
-        background: url(img/backgrounds/1.png) no-repeat 35%;
+        background: url(img/backgrounds-and-turkey-meat-photos/bg.png) no-repeat 35%;
         -webkit-background-size: cover;
         background-size: cover;
-        position: absolute;
-        width: 100%;
-        height: 200%;
-        top: 0;
-        z-index: 1;
-        opacity: 0.6;
     }
 }
 
