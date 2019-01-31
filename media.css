@@ -2,6 +2,14 @@
     .screen-1_item-1  {
         background-color: transparent;
     }
+
+    section.screen-1 {
+        background: url(img/backgrounds-and-turkey-meat-photos/bg.png) no-repeat fixed center / cover;
+    }
+
+    .screen-1_item-2 {
+        background: url(img/backgrounds-and-turkey-meat-photos/bg-blurred-min.png) no-repeat fixed center / cover;
+    }
 }
 
 
@@ -61,14 +69,6 @@
         grid-column: 2 / span 1;
         grid-row: 1 / span 1;
     }
-
-    section.screen-1 {
-        background: url(img/backgrounds-and-turkey-meat-photos/bg.png) no-repeat fixed center / cover;
-    }
-
-    .screen-1_item-2 {
-        background: url(img/backgrounds-and-turkey-meat-photos/bg-blurred-min.png) no-repeat fixed center / cover;
-    }
 }
 
 @media (min-width: 768px) {
@@ -127,9 +127,11 @@
     }
 
     .bgc {
-        background: url(img/backgrounds-and-turkey-meat-photos/bg.png) no-repeat 35%;
+        background: url(img/backgrounds-and-turkey-meat-photos/bg-min.png) no-repeat 30%;
         -webkit-background-size: cover;
         background-size: cover;
     }
 }
+
+
 

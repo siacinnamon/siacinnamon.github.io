@@ -23,7 +23,7 @@ section.screen-1 {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    background: url(img/backgrounds-and-turkey-meat-photos/bg.png) no-repeat scroll center / cover;
+    background: url(img/backgrounds-and-turkey-meat-photos/bg-min.png) no-repeat scroll center / cover;
 }
 
 .screen-1_item-1  {
@@ -142,7 +142,7 @@ section.screen-2 p {
 }
 
 .bgc {
-    background: url(img/backgrounds-and-turkey-meat-photos/bg.png) no-repeat;
+    background: url(img/backgrounds-and-turkey-meat-photos/bg-min.png) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: absolute;
