@@ -23,7 +23,7 @@ section.screen-1 {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    background: url(img/bg.webp) no-repeat scroll center / cover;
+    background: url(tinified/1.png) no-repeat scroll center / cover;
 }
 
 .screen-1_item-1  {
@@ -33,7 +33,7 @@ section.screen-1 {
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-image: url(img/menuicon.webp) !important;
+    background-image: url(tinified/menuicon.png) !important;
 }
 
 .navbar-toggler-icon {
@@ -108,19 +108,19 @@ button.navbar-toggler:focus {
 }
 
 .quality-icon {
-    background: url(img/check-circle-solid.svg) no-repeat center;
+    background: url(tinified/check-circle-solid.svg) no-repeat center;
 }
 
 .money-icon {
-    background: url(img/dollar-sign-solid.svg) no-repeat center;
+    background: url(tinified/dollar-sign-solid.svg) no-repeat center;
 }
 
 .balance-icon {
-    background: url(img/balance-scale-solid.svg) no-repeat center;
+    background: url(tinified/balance-scale-solid.svg) no-repeat center;
 }
 
 .smile-icon {
-    background: url(img/smile-solid.svg) no-repeat center;
+    background: url(tinified/smile-solid.svg) no-repeat center;
 }
 
 section.screen-2 p {
@@ -142,7 +142,7 @@ section.screen-2 p {
 }
 
 .bgc {
-    background: url(img/bg.webp) no-repeat;
+    background: url(tinified/1.png) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: absolute;
@@ -192,7 +192,7 @@ ul {
 
 li {
     list-style: none;
-    background: url(img/turkeyicon.webp) no-repeat 0.4px;
+    background: url(tinified/turkey-icon.png) no-repeat 0.4px;
     padding-left: 40px !important;
     font-size: 180%;
 }
@@ -317,7 +317,7 @@ li:hover {
 }
 
 a.fb-icon {
-    background: url(img/fb.webp) no-repeat center;
+    background: url(tinified/fb.png) no-repeat center;
     background-size: contain;
     box-sizing: border-box;
     display: inline-block;
@@ -327,7 +327,7 @@ a.fb-icon {
 }
 
 a.inst-icon {
-    background: url(img/in.webp) no-repeat center;
+    background: url(tinified/in.png) no-repeat center;
     background-size: contain;
     box-sizing: border-box;
     display: inline-block;
