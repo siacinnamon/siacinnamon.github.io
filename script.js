@@ -1,6 +1,6 @@
 $(function () {
     $(document).scroll(function () {
-        let $nav = $(".navbar");
+        var $nav = $(".navbar");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
@@ -75,8 +75,8 @@ $(document).ready(function () {
 });
 
 
-let controller = new ScrollMagic.Controller();
-let slideParallaxScene = new ScrollMagic.Scene({
+var controller = new ScrollMagic.Controller();
+var slideParallaxScene = new ScrollMagic.Scene({
     triggerElement: '.bgc-parallax',
     triggerHook: 1,
     duration: '100%'
@@ -85,4 +85,4 @@ let slideParallaxScene = new ScrollMagic.Scene({
     .addTo(controller);
 
 
-
+picturefill();
