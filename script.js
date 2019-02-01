@@ -83,6 +83,3 @@ var slideParallaxScene = new ScrollMagic.Scene({
 })
     .setTween(TweenMax.from('.bgc', 1, {y: '-40%', ease: Power0.easeNone}))
     .addTo(controller);
-
-
-picturefill();
