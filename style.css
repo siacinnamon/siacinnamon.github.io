@@ -23,7 +23,7 @@ section.screen-1 {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    background: url(img/bg.webp) no-repeat scroll center / cover;
+    background: url(img/bg-min.png) no-repeat scroll center / cover;
 }
 
 .screen-1_item-1  {
@@ -33,7 +33,7 @@ section.screen-1 {
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-image: url(img/menuicon-min.png) !important;
+    background-image: url(img/bg-blurred-min.png) !important;
 }
 
 .navbar-toggler-icon {
