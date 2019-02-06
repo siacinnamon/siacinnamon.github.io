@@ -1,0 +1,132 @@
+@media (max-width: 330px) {
+    .screen-1_item-2 h1 {
+        font-size: 800%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .bgc-parallax {
+        -ms-text-align-last: center;
+        text-align: center;
+    }
+
+    .bgc {
+        background: url(img/mob-blurred.png) no-repeat 30%;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1025px) {
+    .screen-1 {
+        background: url(img/desktop.png) no-repeat fixed center / cover;
+    }
+    .screen-1_item-1  {
+        background-color: transparent;
+    }
+    .screen-1_item-2 {
+        background: url(img/desktop-blurred.png) no-repeat fixed center / cover;
+    }
+}
+
+@media (min-width: 1024px) {
+    .screen-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    ul {
+        padding-left: 40px;
+    }
+    .screen-3_title {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        align-self: center;
+        text-align: center;
+    }
+
+    .screen-3_item-1 {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .screen-3_item-2 {
+        grid-column: 2 / span 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .screen-3_item-3 {
+        grid-column: 3 / span 1;
+        grid-row: 2;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 993px) {
+
+    .screen-4 button img {
+        display: block;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-items: center;
+        align-items: center;
+        background-color: #262626;
+    }
+
+    .footer-item-1 {
+        text-align: center;
+        color: #bfbfbf;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .footer-item-2 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .screen-2 {
+        display: grid;
+        height: 50vh;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .screen-2_item-1 {
+        grid-column: 1 / span 1;
+    }
+
+    .screen-2_item-2 {
+        grid-column: 2 / span 1;
+    }
+
+    .screen-2_item-3 {
+        grid-column: 3 / span 1;
+    }
+
+    .screen-2_item-4 {
+        grid-column: 4 / span 1;
+    }
+
+    .screen-4 button {
+        border-radius: 100px;
+        border-color: transparent;
+        padding: 20px 50px;
+    }
+
+    .screen-4 a {
+        font-size: 300%;
+    }
+
+    .screen-3_carousel {
+        display: block;
+    }
+}
