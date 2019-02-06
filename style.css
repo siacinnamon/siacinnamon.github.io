@@ -28,7 +28,7 @@ section.screen-1 {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    background: url(img/bg-min.png) no-repeat scroll center / cover;
+    background: url(img/bg-mob.png) no-repeat scroll center / cover;
 }
 
 .screen-1_item-1  {
@@ -147,7 +147,7 @@ section.screen-2 p {
 }
 
 .bgc {
-    background: url(img/bg-min.png) no-repeat;
+    background: url(img/mob-blurred.png) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     position: absolute;

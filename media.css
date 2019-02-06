@@ -4,11 +4,11 @@
     }
 
     section.screen-1 {
-        background: url(img/1.png) no-repeat fixed center / cover;
+        background: url(img/desktop.png) no-repeat fixed center / cover;
     }
 
     .screen-1_item-2 {
-        background: url(img/1-blurred.png) no-repeat fixed center / cover;
+        background: url(img/desktop-blurred.png) no-repeat fixed center / cover;
     }
 }
 
@@ -130,7 +130,7 @@
     }
 
     .bgc {
-        background: url(img/bg-blurred-min.png) no-repeat 30%;
+        background: url(img/mob-blurred.png) no-repeat 30%;
         -webkit-background-size: cover;
         background-size: cover;
     }
