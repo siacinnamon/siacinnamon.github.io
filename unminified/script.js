@@ -86,6 +86,12 @@ var slideParallaxScene = new ScrollMagic.Scene({
 
 
 
-$(document).ready(function(){
+window.onload = function(){
+    var $imgs = $(".carousel-img")
+    for(let i = 0; i < $imgs.length; i++){
+        let img_src = $($imgs[i]).attr("data-src")
+        $($imgs[i]).attr("src", img_src)
+    }
+
     $('iframe.footer-item-2').attr('src', 'https://maps.google.com/maps?width=100%&height=600&hl=en&q=Taras%20Shevchenko%20streer%2C%20Sniatyn+(Your%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed');
-});
+};
