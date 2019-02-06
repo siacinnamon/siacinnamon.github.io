@@ -1,3 +1,9 @@
+@font-face{
+
+    font-family: 'Amatic SC';
+    src: url('fonts/AmaticSC-Bold.ttf') format('truetype');
+}
+
 body {
     font-family: 'Amatic SC', cursive !important;
     margin: 0;
@@ -205,9 +211,10 @@ li:hover {
 
 
 
-.main {
+.screen-3_carousel {
     max-width: 95vw;
     margin: auto;
+    display: none;
 }
 
 .wr img {
@@ -234,6 +241,10 @@ li:hover {
     text-decoration: none;
     color: #ffffff;
     text-shadow: 1px 1px 5px lightgrey;
+}
+
+.screen-4 button img {
+    display: none;
 }
 
 .screen-4 img {

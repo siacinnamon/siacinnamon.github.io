@@ -4,11 +4,11 @@
     }
 
     section.screen-1 {
-        background: url(img/bg-min.png) no-repeat fixed center / cover;
+        background: url(img/1.png) no-repeat fixed center / cover;
     }
 
     .screen-1_item-2 {
-        background: url(img/bg-blurred-min.png) no-repeat fixed center / cover;
+        background: url(img/1-blurred.png) no-repeat fixed center / cover;
     }
 }
 
@@ -48,6 +48,10 @@
 }
 
 @media (min-width: 993px) {
+
+    .screen-4 button img {
+        display: block;
+    }
 
     .footer {
         /*min-width: 100%;*/
@@ -105,13 +109,12 @@
     .screen-4 a {
         font-size: 300%;
     }
-}
 
-@media (max-width: 993px) {
-    .screen-4 button img {
-        display: none;
+    .screen-3_carousel {
+        display: block;
     }
 }
+
 
 @media (max-width: 330px) {
     .screen-1_item-2 h1 {
@@ -127,7 +130,7 @@
     }
 
     .bgc {
-        background: url(img/bg-min.png) no-repeat 30%;
+        background: url(img/bg-blurred-min.png) no-repeat 30%;
         -webkit-background-size: cover;
         background-size: cover;
     }
