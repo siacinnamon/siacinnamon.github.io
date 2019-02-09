@@ -1,3 +1,5 @@
+// ----- nav-bar change color
+
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".navbar");
@@ -5,9 +7,25 @@ $(function () {
     });
 });
 
-// -----
-
 $(document).ready(function () {
+
+    // ----- slow scroll
+
+    $('body').scrollspy({target: ".navbar", offset: 50});
+    $("#navbarNavDropdown a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+
+    // ----- carousel
+
     $(".wrapper").slick({
         autoplay: true,
         autoplaySpeed: 1500,
@@ -31,42 +49,10 @@ $(document).ready(function () {
             }
         ]
 
-    })
-
-});
-
-// -----
-
-$(document).ready(function(){
-    // Add scrollspy to <body>
-    $('body').scrollspy({target: ".navbar", offset: 50});
-
-    // Add smooth scrolling on all links inside the navbar
-    $("#navbarNavDropdown a").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        }  // End if
     });
-});
 
-// -----
+    // ----- hide drop-down menu when clicking on a menu item
 
-$(document).ready(function () {
     $("#navbarNavDropdown a").click(function (event){
         event.preventDefault();
         event.stopImmediatePropagation();
@@ -74,6 +60,7 @@ $(document).ready(function () {
     })
 });
 
+// ----- parallax
 
 var controller = new ScrollMagic.Controller();
 var slideParallaxScene = new ScrollMagic.Scene({
@@ -84,12 +71,12 @@ var slideParallaxScene = new ScrollMagic.Scene({
     .setTween(TweenMax.from('.bgc', 1, {y: '-80%', ease: Power0.easeNone}))
     .addTo(controller);
 
-
+// ----- deferred images loading for better performance
 
 window.onload = function(){
     var $imgs = $(".carousel-img")
-    for(let i = 0; i < $imgs.length; i++){
-        let img_src = $($imgs[i]).attr("data-src")
+    for(var i = 0; i < $imgs.length; i++){
+        var img_src = $($imgs[i]).attr("data-src")
         $($imgs[i]).attr("src", img_src)
     }
 
