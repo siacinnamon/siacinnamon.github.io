@@ -222,14 +222,22 @@ li:hover {
     margin: 15px 0;
 }
 
-.screen-4 button {
-    display: flex;
-    align-items: center;
-}
-
 .screen-4 a {
+    display: block;
+    text-align: center;
+    width: 35vw;
     font-size: 250%;
     color: #ffffff;
+    border-radius: 100px;
+    border-color: transparent;
+    padding: 10px 20px;
+    transition: box-shadow 1s;
+    -webkit-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.35);
+    box-shadow: 0 10px 20px 10px rgba(0,0,0,0.55);
+    margin: 0 auto;
+    background-color: #0aa947;
+    min-width: 265px;
 }
 
 .screen-4 a:hover {
@@ -238,30 +246,18 @@ li:hover {
     text-shadow: 1px 1px 5px lightgrey;
 }
 
-.screen-4 button img {
+.screen-4 a:focus {
+    transition: box-shadow 1s;
+    -webkit-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 20px 10px rgba(0,0,0,0.25);
+    border: none;
+}
+
+.screen-4 a img {
     display: none;
 }
 
-.screen-4 img {
-    width: 70px;
-    height: auto;
-}
-
-.screen-4 button {
-    border-radius: 100px;
-    border-color: transparent;
-    padding: 10px 20px;
-    transition: background 1s;
-    -webkit-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.35);
-    -moz-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.35);
-    box-shadow: 0 10px 20px 10px rgba(0,0,0,0.55);
-    margin: 0 auto;
-    background-color: #0aa947;
-}
-
-.screen-4 button:focus {
-    box-shadow: none;
-}
 /*кінець четвертого екрану*/
 
 /*футер*/

@@ -1,1 +1,341 @@
-.screen-1,.wrapper-box{min-height:100vh}@font-face{font-family:'Amatic SC';src:url(fonts/AmaticSC-Bold.ttf) format('truetype')}body{font-family:'Amatic SC',cursive!important;margin:0;padding:0;min-width:300px}.screen-1{display:grid;grid-template-columns:repeat(4,25%);grid-template-rows:10% 90%;width:100%;box-sizing:border-box;background:url(img/bg-mob.png) center/cover no-repeat}.footer,.screen-2,.screen-3{grid-template-columns:1fr}.screen-1_item-1{grid-column:span 4;grid-row:1/span 1;background-color:#aa0a2c}.navbar-toggler-icon{background-image:url(img/menuicon-min.png)!important;width:2em!important;height:2em!important}a.navbar-brand{color:#fff;font-size:250%}.nav-link{color:#fff;font-size:200%;font-weight:400}.nav-link:hover{color:#fff;text-shadow:1px 1px 5px grey}.navbar.scrolled{background-color:#aa0a2c!important;transition:background-color .2s linear}button.navbar-toggler:focus{outline:0}.screen-1_item-2{grid-column:span 4;grid-row:2/span 2;text-align:center;align-self:center}.screen-1_item-2 h1{box-sizing:border-box;font-size:800%;color:#fff}.screen-1_item-2 p{color:#fff;font-size:200%;letter-spacing:8px}.screen-2{display:grid;min-height:50vh;justify-items:center;align-items:center;padding:30px 0}.balance-icon,.money-icon,.quality-icon,.smile-icon{background-size:auto;box-sizing:border-box;height:10vh}.quality-icon{background:url(img/check-circle-solid.svg) center no-repeat}.money-icon{background:url(img/dollar-sign-solid.svg) center no-repeat}.balance-icon{background:url(img/balance-scale-solid.svg) center no-repeat}.smile-icon{background:url(img/smile-solid.svg) center no-repeat}.screen-2 h2{display:inline-block;padding:5px;text-align:center;font-size:200%;transition:border-bottom 2s}.bgc-parallax{padding:100px 0;color:#fff;background-color:#000;-ms-text-align-last:right;text-align:right;position:relative;overflow:hidden}.bgc{background:url(img/mob-blurred.png) no-repeat;-webkit-background-size:cover;background-size:cover;position:absolute;width:100%;height:200%;top:0;z-index:1;opacity:.6}.content-wrapper{width:90%;margin:0 auto;max-width:1140px;position:relative;z-index:2}.content-wrapper h2{font-size:350%}.content-wrapper p{font-size:175%}.screen-3{display:grid}.screen-3_title{justify-self:center;font-size:300%;padding:20px 0}ul{padding-left:10px}li{list-style:none;background:url(img/turkey-icon.png) .4px no-repeat;padding-left:40px!important;font-size:180%}li:hover{display:inline-block;font-weight:bolder;color:#0aa947}.screen-3_carousel{max-width:95vw;margin:auto}.wr img{max-width:100%;height:auto}.screen-4{min-height:265px;padding-bottom:75px;display:grid;align-content:center}.screen-4 h2{text-align:center;margin:15px 0}.screen-4 button{display:flex;align-items:center;border-radius:100px;border-color:transparent;padding:10px 20px;transition:background 1s;-webkit-box-shadow:0 10px 20px 10px rgba(0,0,0,.35);-moz-box-shadow:0 10px 20px 10px rgba(0,0,0,.35);box-shadow:0 10px 20px 10px rgba(0,0,0,.55);margin:0 auto;background-color:#0aa947}.screen-4 a{font-size:250%;color:#fff}.screen-4 a:hover{text-decoration:none;color:#fff;text-shadow:1px 1px 5px #d3d3d3}.screen-4 button img{display:none}.screen-4 img{width:70px;height:auto}.screen-4 button:focus{box-shadow:none}.footer{display:grid;grid-template-rows:auto;justify-items:center;align-items:center;background-color:#262626}.footer-item-1{text-align:center;color:#bfbfbf;grid-row:1;padding:20px 0}.footer-item-1 h1{margin:10px 0;color:#ddd;font-size:200%}.footer-item-1 a,.footer-item-1 p{margin:10px 0;font-size:130%;color:#ddd}.footer-item-1 a{display:block}.footer-item-1 a:hover{text-decoration:none;color:#ddd}.footer-item-2{grid-row:2;align-self:end}.sm{display:flex;justify-content:center}a.fb-icon,a.inst-icon{box-sizing:border-box;display:inline-block;height:70px;width:70px;margin:auto}a.fb-icon{background:url(img/fb-min.png) center no-repeat;background-size:contain}a.inst-icon{background:url(img/in-min.png) center no-repeat;background-size:contain}img.logo{width:170px;height:auto;align-self:center}
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('fonts/AmaticSC-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Amatic SC', cursive !important;
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+}
+
+.wrapper-box {
+    min-height: 100vh;
+}
+
+/*перший екран*/
+
+.screen-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 10% 90%;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background: url(img/bg-mob.png) no-repeat scroll center / cover;
+}
+
+.screen-1_item-1  {
+    grid-column: span 4;
+    grid-row: 1 / span 1;
+    background-color: #aa0a2c;
+}
+
+.navbar-toggler-icon {
+    background-image: url(img/menuicon-min.png) !important;
+}
+
+.navbar-toggler-icon {
+    width: 2em !important;
+    height: 2em !important;
+}
+
+a.navbar-brand {
+    color: #ffffff;
+    font-size: 250%;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 200%;
+    font-weight: normal;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 5px grey;
+}
+
+.navbar.scrolled {
+    background-color: #aa0a2c !important;
+    transition: background-color 200ms linear;
+}
+
+button.navbar-toggler:focus {
+    outline: none;
+}
+
+.screen-1_item-2 {
+    grid-column: span 4;
+    grid-row: 2 / span 2;
+    text-align: center;
+    align-self: center;
+}
+
+.screen-1_item-2 h1 {
+    box-sizing: border-box;
+    font-size: 800%;
+    color: #ffffff;
+}
+
+.screen-1_item-2 p {
+    color: #ffffff;
+    font-size: 200%;
+    letter-spacing: 8px;
+}
+
+/*кінець першого екрану*/
+
+/*другий екран*/
+.screen-2 {
+    display: grid;
+    min-height: 50vh;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.quality-icon, .money-icon, .balance-icon, .smile-icon {
+    background-size: auto;
+    box-sizing: border-box;
+    height: 10vh;
+}
+
+.quality-icon {
+    background: url(img/check-circle-solid.svg) no-repeat center;
+}
+
+.money-icon {
+    background: url(img/dollar-sign-solid.svg) no-repeat center;
+}
+
+.balance-icon {
+    background: url(img/balance-scale-solid.svg) no-repeat center;
+}
+
+.smile-icon {
+    background: url(img/smile-solid.svg) no-repeat center;
+}
+
+.screen-2 h2 {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    font-size: 200%;
+    transition: border-bottom 2s;
+}
+
+/*parallax*/
+
+.bgc-parallax {
+    padding: 100px 0;
+    color: #fff;
+    background-color: #000000;
+    -ms-text-align-last: right;
+    text-align: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.bgc {
+    background: url(img/mob-blurred.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.6;
+}
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    z-index: 2;
+}
+
+.content-wrapper h2 {
+    font-size: 350%;
+}
+
+.content-wrapper p {
+    font-size: 175%;
+}
+
+/*кінець другого екрану*/
+
+/*третій екран*/
+.screen-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.screen-3_title {
+    justify-self: center;
+    font-size: 300%;
+    padding: 20px 0;
+}
+
+ul {
+    padding-left: 5px;
+}
+
+li {
+    list-style: none;
+    background: url(img/turkey-icon.png) no-repeat 0.4px;
+    padding-left: 40px !important;
+    font-size: 180%;
+}
+
+li:hover {
+    display: inline-block;
+    font-weight: bolder;
+    color: #0aa947;
+}
+
+.screen-3_carousel {
+    max-width: 95vw;
+    margin: auto;
+}
+
+.wr img {
+    max-width: 100%;
+    height:auto;
+}
+
+/*кінець третього екран*/
+
+/*четвертий екран*/
+.screen-4 {
+    min-height: 265px;
+    padding-bottom: 75px;
+    display: grid;
+    align-content: center;
+}
+
+.screen-4 h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.screen-4 a {
+    display: block;
+    text-align: center;
+    width: 35vw;
+    font-size: 250%;
+    color: #ffffff;
+    border-radius: 100px;
+    border-color: transparent;
+    padding: 10px 20px;
+    transition: box-shadow 1s;
+    -webkit-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.35);
+    box-shadow: 0 10px 20px 10px rgba(0,0,0,0.55);
+    margin: 0 auto;
+    background-color: #0aa947;
+    min-width: 265px;
+}
+
+.screen-4 a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px lightgrey;
+}
+
+.screen-4 a:focus {
+    transition: box-shadow 1s;
+    -webkit-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 10px 20px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 20px 10px rgba(0,0,0,0.25);
+    border: none;
+}
+
+.screen-4 a img {
+    display: none;
+}
+
+/*кінець четвертого екрану*/
+
+/*футер*/
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: #262626;
+}
+
+.footer-item-1 {
+    text-align: center;
+    color: #bfbfbf;
+    grid-row: 1;
+    padding: 20px 0;
+}
+
+.footer-item-1 h1 {
+    margin: 10px 0;
+    color: #dddddd;
+    font-size: 200%;
+}
+
+.footer-item-1 p {
+    margin: 10px 0;
+    color: #dddddd;
+    font-size: 130%;
+}
+
+.footer-item-1 a {
+    margin: 10px 0;
+    display: block;
+    color: #dddddd;
+    font-size: 130%;
+}
+
+.footer-item-1 a:hover {
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.footer-item-2 {
+    grid-row: 2;
+    align-self: end;
+}
+
+.sm {
+    display: flex;
+    justify-content: center;
+}
+
+a.fb-icon {
+    background: url(img/fb-min.png) no-repeat center;
+    background-size: contain;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: auto;
+}
+
+a.inst-icon {
+    background: url(img/in-min.png) no-repeat center;
+    background-size: contain;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: auto;
+}
+
+img.logo {
+    width: 170px;
+    height: auto;
+    align-self: center;
+}
+
+/*кінець сторінки*/

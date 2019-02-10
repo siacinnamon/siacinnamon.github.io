@@ -61,8 +61,14 @@
 
 @media (min-width: 993px) {
 
-    .screen-4 button img {
-        display: block;
+    .screen-4 a img {
+        display: inline;
+        width: 60px;
+        height: auto;
+    }
+
+    .screen-4 a {
+        font-size: 300%;
     }
 
     .footer {
@@ -111,13 +117,9 @@
         grid-column: 4 / span 1;
     }
 
-    .screen-4 button {
+    .screen-4 a {
         border-radius: 100px;
         border-color: transparent;
-        padding: 20px 50px;
-    }
-
-    .screen-4 a {
-        font-size: 300%;
+        padding: 20px 20px;
     }
 }
