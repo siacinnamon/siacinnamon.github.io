@@ -93,6 +93,9 @@
 }
 
 @media (min-width: 768px) {
+    .screen-1 {
+        background: url(img/desktop.png) no-repeat scroll center / cover;
+    }
     .screen-2 {
         display: grid;
         height: 50vh;
