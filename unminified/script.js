@@ -18,9 +18,7 @@ $(document).ready(function () {
             var hash = this.hash;
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = '';
-            });
+            }, 800);
         }
     });
 
@@ -38,13 +36,13 @@ $(document).ready(function () {
             {
                 breakpoint: 1025,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 2
                 }
             },
             {
                 breakpoint: 450,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1
                 }
             }
         ]
@@ -74,9 +72,9 @@ var slideParallaxScene = new ScrollMagic.Scene({
 // ----- deferred images loading for better performance
 
 window.onload = function(){
-    var $imgs = $(".carousel-img")
+    var $imgs = $(".carousel-img");
     for(var i = 0; i < $imgs.length; i++){
-        var img_src = $($imgs[i]).attr("data-src")
+        var img_src = $($imgs[i]).attr("data-src");
         $($imgs[i]).attr("src", img_src)
     }
 
